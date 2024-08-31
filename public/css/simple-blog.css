@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header nav {
+  margin-top: 10px;
+}
+header nav a {
+  color: #0066cc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+header nav a:hover {
+  color: #004999;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+main ul li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33% - 40px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+main ul li a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+main ul li a:hover {
+  color: #004999;
+}
+main ul li .actions {
+  display: flex;
+  gap: 10px;
+}
+main ul li .actions a,
+main ul li .actions form {
+  margin: 0;
+}
+main ul li .actions a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+main ul li .actions a:hover {
+  color: #004999;
+}
+main ul li .actions form {
+  display: inline;
+}
+main ul li .actions button {
+  background-color: #ff4c4c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+main ul li .actions button:hover {
+  background-color: #e63946;
+}
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.base-nav {
+  margin: 15px 0;
+}
+
+.base-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(25% - 15px), 1fr));
+  gap: 20px;
+}
+.base-cards .base-card {
+  width: 100%;
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  min-height: 200px;
+}
+.base-cards .base-card .base-tit {
+  font-size: 18px;
+  color: #383838;
+  background-color: ivory;
+  padding: 20px;
+}
+.base-cards .base-card .base-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%;
+  padding: 20px;
+}
+.base-cards .base-card .base-cont {
+  font-size: 16px;
+  color: #878787;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 0;
+}
+.base-cards .base-card form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+.base-cards .base-card form .base-btn {
+  border: none;
+  background: #333;
+  font-size: 14px;
+  padding: 10px;
+  flex: 1 1 100%;
+  color: #fff;
+  cursor: pointer;
+}
+.base-cards .base-card form .base-btn:nth-child(2) {
+  background-color: crimson;
+}/*# sourceMappingURL=simple-blog.css.map */
