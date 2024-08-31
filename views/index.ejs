@@ -1,14 +1,17 @@
-<ul class="base-cards">
+<div class="cards">
   <% posts.forEach(post => { %>
-  <li class="base-card">
-    <a href="/post/<%= post._id %>" class="base-tit"><%= post.title %></a>
-    <div class="base-card-body">
-      <p class="base-cont"><%= post.content %></p>
-      <form action="/delete/<%= post._id %>" method="post">
-        <a href="/edit/<%= post._id %>" class="base-btn base-primary">Edit</a>
-        <button type="submit" class="base-btn base-secondary">Delete</button>
-      </form>
-    </div>
-  </li>
+  <div class="card row-group">
+    <a href="/post/<%= post.id %>" class="card__link"><%= post.title %></a>
+    <form
+      action="/delete/<%= post.id %>"
+      method="post"
+      class="card__form col-group"
+    >
+      <a type="button" class="button button__edit" href="/edit/<%= post.id %>"
+        >Edit</a
+      >
+      <button type="submit" class="button button__delete">Delete</button>
+    </form>
+  </div>
   <% }) %>
-</ul>
+</div>

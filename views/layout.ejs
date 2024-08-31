@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>node-express-ejs-crud-mongoose-example</title>
-    <link rel="stylesheet" href="/css/simple-blog.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
   <body>
-    <header>
-      <h1 class="base-tit">node-express-ejs-crud-mongoose-example</h1>
-      <nav class="base-nav">
-        <a href="/" class="base-btn">Home <i class="base-ico"></i></a>
-        <a href="/new" class="base-btn">New Post <i class="base-ico"></i></a>
-      </nav>
-    </header>
-    <main><%- body %></main>
-    <footer>
-      <p>&copy; 2024 node-express-ejs-crud-mongoose-example</p>
+    <nav class="header">
+      <a href="/" class="header__logo">
+        <img src="/logo.png" alt="Logo" class="header__logo-img" />
+      </a>
+      <div class="header__menu">
+        <a href="/" class="header__menu-item">Home</a>
+        <a href="/new" class="header__menu-item">New Post</a>
+      </div>
+    </nav>
+    <main class="container"><%- body %></main>
+    <footer class="footer">
+      <p class="footer__text">© subin 2024</p>
     </footer>
   </body>
 </html>
